@@ -108,9 +108,45 @@
                 max-width: 80%;
             }
         }
+        <style>
+    /* Estilos para el <nav> */
+    nav {
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center; /* Centrar el contenido del <nav> */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Utilizar flexbox para alinear los elementos */
+        justify-content: center; /* Centrar horizontalmente los elementos */
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #e50914;
+    }
+</style>
+
     </style>
 </head>
-<body>
+<body onload="alert('Bienvenido a Videojuegos y Consolas!')"></body>
     <header>
         <h1>Videojuegos y Consolas</h1>
         <div class="marquee">
@@ -124,6 +160,16 @@
             </div>
         </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#ps5">PlayStation 5</a></li>
+            <li><a href="#xbox">Xbox Series X</a></li>
+            <li><a href="#switch">Nintendo Switch</a></li>
+            <li><a href="#multiplatform">Juegos Multiplataforma</a></li>
+            <li><a href="#news">Noticias y Lanzamientos Recientes</a></li>
+        </ul>
+    </nav>
+    
     <div class="container">
         <div class="main-content">
             <div class="section">
@@ -131,6 +177,7 @@
                 <img src="https://m.media-amazon.com/images/I/41p8FiLGtrL._AC_UF1000,1000_QL80_.jpg" alt="PlayStation 5">
                 <p>La PlayStation 5 (PS5) es una consola de videojuegos de sobremesa desarrollada por Sony Interactive Entertainment. Fue lanzada en noviembre de 2020.</p>
             </div>
+            <div class="section" id="ps5">
             <div class="section">
                 <h3>Juegos Exclusivos de PlayStation 5</h3>
                 <h4>Spider-Man: Miles Morales</h4>
@@ -142,6 +189,7 @@
                 <p>Demon's Souls es un juego de rol de acción desarrollado por Bluepoint Games y publicado por Sony Interactive Entertainment. Fue lanzado en noviembre de 2020 para PlayStation 5.</p>
                 <p><a href="https://www.youtube.com/watch?v=jGUtTPRuGak" target="_blank">Ver tráiler de Demon's Souls</a></p>
             </div>
+            <div class="section" id="xbox">
             <div class="section">
                 <h2>Xbox Series X</h2>
                 <img src="https://ss423.liverpool.com.mx/xl/1100132318.jpg" alt="Xbox Series X">
@@ -158,6 +206,7 @@
                 <p>Forza Horizon 5 es un juego de carreras desarrollado por Playground Games y publicado por Xbox Game Studios. Fue lanzado en noviembre de 2021 para Xbox One y Xbox Series X/S.</p>
                 <p><a href="https://www.youtube.com/watch?v=FYH9n37B7Yw" target="_blank">Ver tráiler de Forza Horizon 5</a></p>
             </div>
+            <div class="section" id="switch">
             <div class="section">
                 <h2>Nintendo Switch</h2>
                 <img src="https://m.media-amazon.com/images/I/51Gz7IimgoL._AC_UF1000,1000_QL80_.jpg" alt="Nintendo Switch">
@@ -174,6 +223,7 @@
                 <p>Super Mario Odyssey es un juego de plataformas desarrollado y publicado por Nintendo. Fue lanzado en octubre de 2017 para Nintendo Switch.</p>
                 <p><a href="https://www.youtube.com/watch?v=5kcdRBHM7kM" target="_blank">Ver tráiler de Super Mario Odyssey</a></p>
             </div>
+            <div class="section" id="multiplatform">
             <div class="section">
                 <h2>Juegos Multiplataforma Populares</h2>
                 <h3>The Legend of Zelda: Breath of the Wild</h3>
@@ -194,6 +244,7 @@
                 <p><a href="https://www.youtube.com/watch?v=ehjJ614QfeM" target="_blank">Ver tráiler de The Witcher 3: Wild Hunt</a></p>
             </div>
         </div>
+        <div class="section" id="news">
         <div class="news-content">
             <div class="section">
                 <h2>Noticias y Lanzamientos Recientes</h2>
@@ -220,5 +271,21 @@
             </div>
         </div>
     </div>
+    <div class="section">
+        <h2>¿Preguntas o Comentarios?</h2>
+        <form action="mailto:ebsxdm@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
 </body>
 </html>
